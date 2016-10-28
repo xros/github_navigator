@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github Navigator</title>
+</head>
+<body>
+    
+
+{% for res in results %}
+
+<h1>{{ res["search_term"] }}</h1>
+<h2>{{ results.index(res)+1 }}. {{ res["repository_name"] }}</h2>
+<h3> Created {{ res["created_at"].replace("T"," ").replace("Z","") }}</h3>
+<a href="{{ res["owner_url"] }}"><img src="{{ res["avatar_url"] }}" alt="avatar" height="42" width="42"/></a>
+{{ res["owner_login"] }}
+<h3>LastCommit</h3>
+{{ res["sha"] }} {{ res["commit_message"] }}  {{ res["commit_author_name"] }}
+<hr/>
+
+
+{% end %}
+
+
+</body>
+</html>

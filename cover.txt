@@ -1,0 +1,9 @@
+GitHub Navigator
+
+This is an application built in Tornado Framework 4.3/4.4+
+
+To install dependencies
+
+```
+pip install -r dependencies
+```
