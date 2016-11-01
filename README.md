@@ -1,6 +1,8 @@
 GitHub Navigator
 ================
 
+Alexander Liu
+
 ##### A web application to search latest repositories by created time on GitHub.
 
 No more than 5 results for each search.
